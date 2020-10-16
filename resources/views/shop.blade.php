@@ -73,7 +73,7 @@
                         <div class="single-product">
                             <a href="{{ route('shop.show',$product->slug) }}">
                                 <div class="img-wrapper">
-                                    <img class="img-fluid" src="{{ Voyager::image($product->image) }}" alt="">
+                                    <img class="img-fluid" src="{{ $product->image }}" alt="">
                                 </div>
                             </a>
                             <div class="product-details">

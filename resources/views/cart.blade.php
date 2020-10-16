@@ -46,7 +46,7 @@
                                     <div class="d-flex">
                                         <a href="#">
                                             <img width="120px" class="img-thumbnail w-20"
-                                                src="{{ Voyager::image($product->model->image) }}" alt="">
+                                                src="{{ $product->model->image }}" alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -160,7 +160,7 @@
                                     <div class="d-flex">
                                         <a href="#">
                                             <img width="120px" class="img-thumbnail w-20"
-                                                src="{{ Voyager::image($product->model->image) }}" alt="">
+                                                src="{{ $product->model->image }}" alt="">
                                         </a>
                                     </div>
                                 </div>

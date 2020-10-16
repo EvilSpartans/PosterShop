@@ -13,11 +13,11 @@
             <div class="col-lg-6">
                 <div class="s_Product_carousel">
                     <div class="single-prd-item">
-                        <img class="img-fluid" src="{{ Voyager::image($product->image) }}" alt="">
+                        <img class="img-fluid" src="{{ $product->image }}" alt="">
                     </div>
                     @foreach(json_decode($product->images, true) as $image)
                     <div class="single-prd-item">
-                        <img class="img-fluid" src="{{ Voyager::image($image) }}" alt="">
+                        <img class="img-fluid" src="{{ $image }}" alt="">
                     </div>
                     @endforeach
                 </div>

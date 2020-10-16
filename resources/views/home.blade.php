@@ -134,7 +134,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-product">
                         <div class="img-wrapper">
-                            <img class="img-fluid" src="{{ Voyager::image($product->image) }}" alt="">
+                            <img class="img-fluid" src="{{ $product->image }}" alt="">
                         </div>
                         <div class="product-details">
                             <h6 class="text-center">{{ $product->name }}</h6>
@@ -183,7 +183,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="single-product">
                     <div class="img-wrapper">
-                        <img class="img-fluid" src="{{ Voyager::image($product->image) }}" alt="">
+                        <img class="img-fluid" src="{{ $product->image }}" alt="">
                     </div>
                         <div class="bestseller-details">
                             <h6 class="text-center">{{ $product->name }}</h6>
