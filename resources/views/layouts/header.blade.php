@@ -4,9 +4,12 @@
         <nav class="navbar navbar-expand-lg navbar-light main_box">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h mr-5" href="{{ route('home') }}"><img src="{{ asset('img/logo.png')}}" alt=""></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand logo_h mr-5" href="{{ route('home') }}">
+                    <div class="logoo"></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -34,32 +37,43 @@
                         </li>
                     </ul>
                     <ul class="nav navbar-nav menu_nav ml-auto">
+                        <li class="nav-item">
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="check">
+                                <div class="checkbox-container">
+                                  <label class="mark" for="check"></label>
+                                </div>
+                              </div>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav menu_nav ml-auto">
                         @guest
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">
-                                        <i class="fas fa-user-plus"></i>
-                                        Inscription
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">
-                                        <i class="fas fa-sign-in-alt"></i>
-                                        Connexion
-                                    </a>
-                                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">
+                                <i class="fas fa-user-plus"></i>
+                                Inscription
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">
+                                <i class="fas fa-sign-in-alt"></i>
+                                Connexion
+                            </a>
+                        </li>
                         @else
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('orders') }}">
-                                        <i class="fas fa-truck"></i>
-                                        Commandes
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('logout') }}">
-                                        <i class="fas fa-sign-out-alt"></i>
-                                        Déconnexion
-                                    </a>
-                                </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('orders') }}">
+                                <i class="fas fa-truck"></i>
+                                Commandes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('logout') }}">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Déconnexion
+                            </a>
+                        </li>
                         @endguest
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('cart') }}">

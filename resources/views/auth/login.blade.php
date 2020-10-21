@@ -2,10 +2,16 @@
 
 @section('content')
 
-
+{{-- <div class="wrapper">
+    <div id="loader-container">
+        <p id="loadingText">Loading</p>
+    </div>
+</div> --}}
 <!-- Start Banner Area -->
 {{ Breadcrumbs::render('login') }}
 <!-- End Banner Area -->
+
+
 
 <!--================Login Box Area =================-->
 <section class="login_box_area section_gap">
@@ -74,5 +80,12 @@
     </div>
 </section>
 <!--================End Login Box Area =================-->
+    {{-- Spinner --}}
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".wrapper").fadeOut("slow");;
+        });
 
+    </script>
 @stop

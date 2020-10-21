@@ -29,11 +29,26 @@
     <link rel="stylesheet" href="{{ asset('css/ion.rangeSlider.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/ion.rangeSlider.skinFlat.css') }}" />
     <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link id="theme" rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link id="theme" rel="stylesheet" href="{{ asset('css/spiner.css') }}">
+
+
     @yield('includes')
+
 </head>
 
-<body>
+
+<body onload="document.getElementsByTagName('body')[0].style.visibility = 'visible';" style="visibility:hidden;">
+    {{-- <body> --}}
+
+    <div class="wrapper">
+        <div id="loader-container">
+            <p id="loadingText">Loading</p>
+        </div>
+    </div>
+
+
+    {{-- <body> --}}
     <div id="app">
         @include('layouts.header')
 
@@ -99,14 +114,47 @@
     <script>
         var owl = $('.owl-carousel');
         owl.owlCarousel({
-        items:1, //how many items you want to display
-        loop:true,
-        margin:10,
-        autoplay:true,
-        autoplayTimeout:3000,
-        autoplayHoverPause:true
+            items: 1, //how many items you want to display
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
         });
+
     </script>
+
+
+    {{-- Dark mode --}}
+
+    <script>
+        function toggle(theme) {
+            var styleSheet = document.getElementById("theme");
+            if (theme != styleSheet.href) styleSheet.href = theme;
+            document.getElementById("check").checked = styleSheet.href === "{{ asset('css/main-dark.css') }}";
+        }
+        window.addEventListener("DOMContentLoaded", function loadTheme() {
+            var theme = localStorage.getItem("theme") || document.getElementById("theme").href;
+            toggle(theme);
+            document.getElementById("check").addEventListener("change", function () {
+                var theme = this.checked ? "{{ asset('css/main-dark.css') }}" :
+                    "{{ asset('css/main.css') }}"
+                toggle(theme);
+                localStorage.setItem("theme", theme);
+            })
+        })
+
+    </script>
+
+    {{-- Spinner --}}
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $(".wrapper").fadeOut("slow");;
+        });
+
+    </script>
+
 
 </body>
 

@@ -1,17 +1,19 @@
 <?php
 
-use App\Http\Controllers\CartController;
-use App\Http\Controllers\CheckoutController;
-use App\Http\Controllers\CouponsController;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SaveController;
 use App\Http\Controllers\ShopController;
 use Illuminate\Support\Facades\Redirect;
+use App\Http\Controllers\CouponsController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\SaveController;
+use App\Http\Controllers\CheckoutController;
 
 /*
 |--------------------------------------------------------------------------
@@ -69,3 +71,4 @@ Route::get('/logout', function() {
 
     return Redirect::to('/');
 })->name('logout');
+
