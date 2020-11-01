@@ -57,7 +57,7 @@
                     <h6>Retrouvez-nous</h6>
                     <p>Sur les réseaux sociaux</p>
                     <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/EvilSpartans/?view_public_for=107091041205593"><i class="fa fa-facebook"></i></a>
                         <a href="#"><i class="fa fa-twitter"></i></a>
                         <a href="#"><i class="fa fa-dribbble"></i></a>
                         <a href="#"><i class="fa fa-behance"></i></a>

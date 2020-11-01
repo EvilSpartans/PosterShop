@@ -15,9 +15,7 @@
                                 <h1>Nouveauté</h1>
                                 <h3>Je suis une légende</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum
-                                    dapibus. Suspendisse pharetra sem lectus, a interdum eros pellentesque nec. Cras
-                                    lacus neque, ultrices vitae iaculis quis, imperdiet non quam.</p>
+                                    Robert Neville était un brillant scientifique, mais même lui n'a pu endiguer le terrible virus - créé de la main de l'homme - qui a dévasté la race humaine. Pour une raison inconnue, Neville est immunisé et reste à ce jour le dernier être humain vivant dans ce qui reste de New York et peut-être du monde. Depuis trois ans, il envoie des messages de détresse à qui voudra bien l'entendre.</p>
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
@@ -39,9 +37,7 @@
                                 <h1>Cette semaine</h1>
                                 <h3>Avatar</h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis condimentum
-                                    dapibus. Suspendisse pharetra sem lectus, a interdum eros pellentesque nec. Cras
-                                    lacus neque, ultrices vitae iaculis quis, imperdiet non quam.</p>
+                                    Malgré sa paralysie, Jake Sully, un ancien marine immobilisé dans un fauteuil roulant, est resté un combattant au plus profond de son être. Il est recruté pour se rendre à des années-lumière de la Terre, sur Pandora, où de puissants groupes industriels exploitent un minerai rarissime destiné à résoudre la crise énergétique sur Terre.</p>
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
@@ -121,10 +117,7 @@
                 <div class="col-lg-6 text-center">
                     <div class="section-title">
                         <h1>Derniers produits</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore
-                            magna aliqua.</p>
+                        <p>Découvrez sans plus attendre les dernières nouveautés ! </p>
                     </div>
                 </div>
             </div>
@@ -170,10 +163,7 @@
                 <div class="col-lg-6 text-center">
                     <div class="section-title">
                         <h1>Meilleures ventes</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore
-                            magna aliqua.</p>
+                        <p>Les produits les plus vendues</p>
                     </div>
                 </div>
             </div>
@@ -188,7 +178,7 @@
                         <div class="bestseller-details">
                             <h6 class="text-center">{{ $product->name }}</h6>
                             <div class="price text-center">
-                                <h6>$ {{ $product->price }}</h6>
+                                <h6>€ {{ $product->price }}</h6>
                             </div>
                             <p><small>{{ $product->description }}</small></p>
                             <div class="prd-bottom d-flex justify-content-around">

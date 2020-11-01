@@ -26,7 +26,7 @@
                 <div class="s_product_text">
                     <h3>{{ $product->name }}</h3>
 
-                    <h2>$ {{ $product->price }}</h2>
+                    <h2>€ {{ $product->price }}</h2>
                     <ul class="list">
                     <li><a href="#"><span>Catégorie</span> : {{ $product->category->name }}</a></li>
                         <li><a href="#"><span>Disponibilité</span> : En stock</a></li>

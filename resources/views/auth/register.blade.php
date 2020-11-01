@@ -17,8 +17,7 @@
                     <img class="img-fluid" src="img/login.jpg" alt="">
                     <div class="hover">
                         <h4>Déjà un compte ? </h4>
-                        <p>There are advances being made in science and technology everyday, and a good example of this
-                            is the</p>
+                        <p>Inscrivez-vous afin de commander vos produits !</p>
                         <a class="primary-btn" href="{{ route('login') }}">Se connecter</a>
                     </div>
                 </div>

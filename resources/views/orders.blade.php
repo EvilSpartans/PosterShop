@@ -33,7 +33,7 @@
                     <tr>
                         <td>{{ $product->name }}</td>
                         <td>x {{ $product->pivot->quantity }}</td>
-                        <td>$ {{ round($product->price * $product->pivot->quantity, 2) }}</td>
+                        <td>€ {{ round($product->price * $product->pivot->quantity, 2) }}</td>
                     </tr>
                     <tr>
                         <td><b>Totale</b></td>

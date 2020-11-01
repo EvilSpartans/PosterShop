@@ -58,7 +58,7 @@
                                 </div>
                             </td>
                             <td>
-                                <h5>$ {{ $product->model->price }}</h5>
+                                <h5>€ {{ $product->model->price }}</h5>
                             </td>
                             <td>
                                 <div class="product_count">
