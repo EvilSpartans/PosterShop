@@ -15,7 +15,7 @@
                                 <h1>À propos</h1>
                                 <h3>Qui sommes-nous ?</h3>
                                 <p>
-                                    Nous sommes une société indépendante inscrite au registre des commerçants. Nous proposons la vente d'affiches de cinéma en petit et grand format. Pour plus d'informations, n'hésitez pas à nous <a class="homecontact" href="{{ route('contact') }}"> contacter </a> </p>
+                                    Nous sommes une société indépendante inscrite au registre des commerçants. Nous proposons la vente d'affiches de cinéma en petit et grand format. Pour plus d'informations, n'hésitez pas à nous <a style="color: #17a2b8" href="{{ route('contact') }}"> contacter </a> </p>
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
