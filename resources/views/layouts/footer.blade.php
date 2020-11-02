@@ -6,7 +6,7 @@
                 <div class="single-footer-widget">
                     <h6>A propos</h6>
                     <p>
-                        Nous sommes une société indépendante inscrite au registre des commerçants.
+                        Nous sommes une société indépendante inscrite au registre des commerçants. Nous proposons la vente d'affiches de cinéma en petit et grand format.
                     </p>
                 </div>
             </div>
