@@ -134,7 +134,7 @@
                             <div class="price text-center">
                                 <h6>€ {{ $product->price }}</h6>
                             </div>
-                            <p><small>{{ $product->description }}</small></p>
+                            <p><small>{{ $product->detail }}</small></p>
                             <div class="prd-bottom d-flex justify-content-around">
                                 <form action="{{ route('cart.store') }}" method="POST">
                                     @csrf
@@ -180,7 +180,7 @@
                             <div class="price text-center">
                                 <h6>€ {{ $product->price }}</h6>
                             </div>
-                            <p><small>{{ $product->description }}</small></p>
+                            <p><small>{{ $product->detail }}</small></p>
                             <div class="prd-bottom d-flex justify-content-around">
                                 <form action="{{ route('cart.store') }}" method="POST">
                                     @csrf
