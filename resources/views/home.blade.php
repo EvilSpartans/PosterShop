@@ -12,14 +12,14 @@
                     <div class="row single-slide align-items-center d-flex">
                         <div class="col-lg-5 col-md-6">
                             <div class="banner-content">
-                                <h1>Nouveauté</h1>
-                                <h3>Je suis une légende</h3>
+                                <h1>À propos</h1>
+                                <h3>Qui sommes-nous ?</h3>
                                 <p>
-                                    Robert Neville était un brillant scientifique, mais même lui n'a pu endiguer le terrible virus - créé de la main de l'homme - qui a dévasté la race humaine. Pour une raison inconnue, Neville est immunisé et reste à ce jour le dernier être humain vivant dans ce qui reste de New York et peut-être du monde. Depuis trois ans, il envoie des messages de détresse à qui voudra bien l'entendre.</p>
+                                    Nous sommes une société indépendante inscrite au registre des commerçants. Nous proposons la vente d'affiches de cinéma en petit et grand format. Pour plus d'informations, n'hésitez pas à nous <a class="homecontact" href="{{ route('contact') }}"> contacter </a> </p>
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
-                                        <span class="add-text text-uppercase text-white">Acheter</span>
+                                       <a href="{{ route('shop') }}"> <span class="add-text text-uppercase text-white">Acheter</span> </a>
                                     </button>
                                 </div>
                             </div>
@@ -41,7 +41,7 @@
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
-                                        <span class="add-text text-uppercase text-white">Acheter</span>
+                                       <a href="{{ route('shop') }}"> <span class="add-text text-uppercase text-white">Acheter</span> </a>
                                     </button>
                                 </div>
                             </div>
