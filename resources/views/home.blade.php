@@ -35,9 +35,9 @@
                         <div class="col-lg-5 col-md-6">
                             <div class="banner-content">
                                 <h1>Cette semaine</h1>
-                                <h3>Avatar</h3>
+                                <h3>Star wars IX</h3>
                                 <p>
-                                    Malgré sa paralysie, Jake Sully, un ancien marine immobilisé dans un fauteuil roulant, est resté un combattant au plus profond de son être. Il est recruté pour se rendre à des années-lumière de la Terre, sur Pandora, où de puissants groupes industriels exploitent un minerai rarissime destiné à résoudre la crise énergétique sur Terre.</p>
+                                Star Wars, épisode IX : L'Ascension de Skywalker est un film américain de science-fiction de type space opera coécrit et réalisé par J. J. Abrams, sorti en 2019. Neuvième opus de la saga Star Wars, il fait suite à l'épisode VIII : Les Derniers Jedi.</p>
                                 <div class="add-bag d-flex align-items-center">
                                     <button class="primary-btn" type="submit">
                                         <i class="fas fa-plus"></i>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="col-lg-7">
                             <div class="banner-img">
-                                <img class="w-50" src="{{ asset('img/product/avatar.png')}}" alt="">
+                                <img class="w-50" src="{{ asset('img/product/sw.png')}}" alt="">
                             </div>
                         </div>
                     </div>
