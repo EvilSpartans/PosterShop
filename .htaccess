@@ -8,7 +8,7 @@ SetEnv PHP_VER 7_2
 RewriteEngine on
 RewriteBase /
 
-RewriteCond %{HTTP_HOST} ^http://postershop.herokuapp.com/ [NC]
+RewriteCond %{HTTP_HOST} ^postershop.herokuapp.com [NC]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L]
 
